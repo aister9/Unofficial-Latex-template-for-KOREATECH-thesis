@@ -1,5 +1,5 @@
 %%
-%% This is file `newnew.bst',
+%% This is file `unofficial-koreatech.bst',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
