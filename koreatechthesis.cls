@@ -170,6 +170,7 @@
 \RequirePackage[font=bf,format=hang]{caption}
 \RequirePackage{footmisc}		% to format footnotes
 \RequirePackage{graphicx}
+\RequirePackage{lmodern}
 
 %%-- Table of contents
 \DeclareRobustCommand*{\tocbox}[1]{%
@@ -773,8 +774,8 @@
 %%-- Bibliography --------------------------------------------------------------------------------------------
 
 \if@eng
-	\def\refname{Bibliography}
-	\def\bibname{Bibliography}
+	\def\refname{References}
+	\def\bibname{References}
 \else
 	\def\refname{\namebox{참\hfill 고\hfill 문\hfill 헌}}
 	\def\bibname{\namebox{참\hfill 고\hfill 문\hfill 헌}}
