@@ -307,7 +307,7 @@
 			\renewcommand{\baselinestretch}{1.6}
 			\LARGE The Graduate School of \\
 			\vspace{-.5cm}
-			Korea University of Technology \& Education\\
+			\text{Korea University of Technology \& Education}\\
 			\Large\@department\\
 			\vspace{-.4cm}
 			\@major~Major\\
@@ -500,7 +500,7 @@
 			\renewcommand{\baselinestretch}{1.6}
 			\LARGE The Graduate School of \\
 			\vspace{-.5cm}
-			Korea University of Technology \& Education\\
+			\text{Korea University of Technology \& Education}\\
 			\Large\@department\\
 			\vspace{-.4cm}
 			\@major~Major\\
@@ -577,7 +577,7 @@
 			\renewcommand{\baselinestretch}{1.6}
 			\LARGE The Graduate School of \\
 			\vspace{-.5cm}
-			Korea University of Technology \& Education\\
+			\text{Korea University of Technology \& Education}\\
 			\Large\@department\\
 			\vspace{-.4cm}
 			\@major~Major\\
@@ -654,7 +654,7 @@
 			\renewcommand{\baselinestretch}{1.6}
 			\LARGE The Graduate School of \\
 			\vspace{-.5cm}
-			Korea University of Technology \& Education
+			\text{Korea University of Technology \& Education}
 			
 			\vspace{1cm}
 		}
@@ -813,7 +813,7 @@
 				\@majoreng~Major\\
 			\fi
 			The Graduate School\\
-			Korea University of Technology \& Education
+			\text{Korea University of Technology \& Education}
 		\end{spacing}
 	\end{flushright}
 	\vspace{10pt}
