@@ -68,7 +68,7 @@
 %			ex - roughly the height of a lowercase x
 %			em - roughly the width of an uppercase M
 \if@bfive
-	\LoadClass[11pt]{book}
+	\LoadClass[11pt,openany]{book}
 	\RequirePackage[paperwidth=182mm,paperheight=257mm,includeheadfoot]{geometry}		% define paper dimension: B5 paper (182mm * 257mm, 4*6배판)
 	% Note: The size of B5 paper according to the ISO standard is 176*250 while according to the JIS standard is 182*257.
 	%		And LaTeX accepts the ISO standard whereas most in Korea accept JIS standard unfortunately.
@@ -87,7 +87,7 @@
 	\setlength{\textheight}{\paperheight-25mm-25mm-15mm}	% top = 25mm = \topmargin+\headheight+\headsep+\voffset, bottom = 25mm, footer = 15mm
 	\setlength{\footskip}{15mm}
 \else
-	\LoadClass[11pt,a4paper]{book}
+	\LoadClass[11pt,a4paper,openany]{book}
 	\RequirePackage{geometry}
 	
 	\setlength{\hoffset}{39mm-1in}			% horizontal margins
@@ -285,11 +285,11 @@
 	
 	\if@eng
 		\bfseries\noindent\Large%
-		Dissertation for \@degree~degree	% approximately 14.4pt when the base font size is 11pt.
+		Dissertation for the \@degree~degree	% approximately 14.4pt when the base font size is 11pt.
 		
 		\vspace{1mm}
 		\noindent%
-		Advisor~\@advisor
+		Approved by Thesis Advisor of ~\@advisor
 				
 		\vspace{1.5cm}
 		{\centering%
@@ -347,7 +347,7 @@
 	
 	\mdseries
 	\normalsize
-	\cleardoublepage
+	% \cleardoublepage
 }
 
 
@@ -468,7 +468,6 @@
 }
 
 
-
 %-- Inside cover --------------------------------------------------------------------------------------------
 
 \def\insidecover{%
@@ -477,11 +476,11 @@
 	
 	\if@eng
 		\bfseries\noindent\Large%
-		Dissertation for \@degree~degree	% approximately 14.4pt when the base font size is 11pt.
+		Dissertation for the \@degree~degree	% approximately 14.4pt when the base font size is 11pt.
 		
 		\vspace{1mm}
 		\noindent%
-		Advisor~\@advisor
+		Approved by Thesis Advisor of ~\@advisor
 		
 		
 		\vspace{1.5cm}
@@ -544,7 +543,6 @@
 	
 	\mdseries
 	\normalsize
-	\cleardoublepage
 }
 
 
@@ -566,9 +564,9 @@
 			
 			\vfill
 			\bfseries
-			\LARGE This dissertation is hereby submitted for\\
-			\vspace{-.3cm}
-			\@degree~degree~in~\@field.
+			
+			\LARGE This dissertation is hereby submitted for the degree of \@degree\\
+			% \vspace{-.3cm}
 			
 			\vfill
 			\LARGE\@degreemonth~\@degreeyear%
@@ -614,7 +612,6 @@
 	
 	\mdseries
 	\normalsize
-	\cleardoublepage
 }
 
 
@@ -629,7 +626,7 @@
 		\vspace*{0.3cm}
 		\bfseries
 		{\renewcommand{\baselinestretch}{1.2}
-		\LARGE\noindent\@author's dissertation for {\@degree} degree in {\@major} major is hereby approved by
+		\LARGE\noindent\@author's dissertation for the degree of {\@degree} is hereby approved by
 		}
 		
 		{\centering%
@@ -697,7 +694,6 @@
 	
 	\mdseries
 	\normalsize
-	\cleardoublepage
 }
 
 
@@ -729,17 +725,13 @@
 	\thispagestyle{empty}
 	\normalsize
 }
-{
-	\cleardoublepage
-}
-
-
 
 %%-- Korean Abstract -----------------------------------------------------------------------------------------
 
 \newenvironment{abstractkor} {
-	\cleardoublepage
-	\phantomsection%		% \phantomsection -> anchoring
+	\newpage
+	\typeout{making abstractkor}
+	% \phantomsection%		% \phantomsection -> anchoring
 	\if@eng
 		\addcontentsline{toc}{chapter}{Abstract in Korean}
 		\noindent{\Large\bfseries Abstract in Korean}
@@ -766,7 +758,7 @@
 		\end{description}
 	\end{spacing}
 	\vspace*{2mm}
-	\cleardoublepage
+	% \cleardoublepage
 }
 
 
@@ -829,7 +821,6 @@
 		\end{description}
 	\end{spacing}
 	\vspace*{2mm}
-	\cleardoublepage
 }
 
 
